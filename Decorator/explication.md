@@ -39,3 +39,35 @@ Ce sont les classes qui ajoutent réellement les nouveaux comportements.
 Chaque décorateur concret ajoute une fonctionnalité spécifique.
 Ils peuvent exécuter un traitement avant et/ou après avoir appelé la méthode de l’objet décoré.
 Ils peuvent être combinés entre eux pour cumuler les fonctionnalités.
+
+## Avantages 
+
+Extensibilité sans modifier les classes existantes
+
+Il permet d’ajouter des fonctionnalités à un objet à la volée, sans toucher au code original.
+
+Composition flexible
+
+Plusieurs décorateurs peuvent être combinés pour créer des comportements complexes.
+
+Respect du principe Open/Closed
+
+Les classes existantes restent fermées à la modification mais ouvertes à l’extension via des décorateurs.
+
+Remplacement du subclassing
+
+Évite la prolifération de sous-classes pour chaque combinaison possible de fonctionnalités.
+
+## Inconvénients Decorator
+
+Complexité de la structure
+
+L’utilisation de multiples décorateurs empilés peut rendre le code difficile à suivre.
+
+Difficile à déboguer
+
+Comme les appels sont transmis de décorateur en décorateur, il peut être difficile de savoir quelle classe fait quoi.
+
+Risque de surcharge
+
+Chaque décorateur ajoute une couche supplémentaire, ce qui peut affecter légèrement la performance si trop utilisé.
