@@ -25,7 +25,7 @@ ConcreteBuilder s’occupe de construire l’objet
 
 Client (le code principal) demande juste les étapes ou le type de produit voulu
 
-2️⃣ Étapes de construction
+️2 Étapes de construction
 
 Un Builder définit des méthodes pour chaque étape de construction :
 
@@ -37,7 +37,7 @@ setGPS() → pour définir si le GPS est présent
 
 Chaque méthode modifie l’objet en cours de construction, mais le client ne manipule jamais l’objet directement.
 
-3️⃣ Produit final (Product)
+3 Produit final (Product)
 
 Le Product est l’objet que l’on construit.
 
@@ -47,7 +47,7 @@ Une méthode getVoiture() ou getProduct() permet de récupérer l’objet final
 
 on peut ensuite utiliser l’objet normalement, sans connaître les détails de sa construction.
 
-4️⃣ Director (qui est optionnel)
+4 Director (qui est optionnel)
 
 Le Director définit un ordre standard pour construire un produit.
 
